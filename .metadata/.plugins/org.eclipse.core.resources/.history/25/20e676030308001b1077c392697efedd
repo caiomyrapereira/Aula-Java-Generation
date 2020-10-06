@@ -1,0 +1,12 @@
+package Exercicios;
+
+import java.util.Scanner;
+
+public class Exe07 {
+	public static void main(String args[]) {
+		//7. Um sistema de equações lineares do tipo:
+		
+		Scanner ler = new Scanner(System.in);
+		
+	}
+}
