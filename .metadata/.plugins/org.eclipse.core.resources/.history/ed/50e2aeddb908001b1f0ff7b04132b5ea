@@ -1,0 +1,28 @@
+package Lista02Exercicios;
+
+import java.util.Scanner;
+
+public class Exe04 {
+	public static void main(String args[]) {
+		/*
+		  4- Faça um programa em que permita a entrada de um número qualquer e exiba se este
+             número é par ou ímpar. Se for par exiba também a raiz quadrada do mesmo; se for
+             ímpar exiba o número elevado ao quadrado. 
+		*/
+		
+		Scanner ler = new Scanner(System.in);
+		int numero;
+		
+		System.out.print("Digite um número qualquer: ");
+		numero = ler.nextInt();
+		
+		if(numero%2==0) {
+			System.out.printf("\nO número %d%s",numero," é Par");
+			System.out.printf("\nA raiz quadrado do número %d%s%f",numero," é ", Math.sqrt(numero));
+		}
+		else {
+			System.out.printf("\nO número %d%s",numero," é Impar");
+			System.out.printf("\nO número elevando ao quadrado é %f ", Math.pow(numero));
+		}
+	}
+}
