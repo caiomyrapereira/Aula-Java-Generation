@@ -1,0 +1,15 @@
+package Lista03Exercicios;
+
+import java.util.Scanner;
+
+public class Exe02 {
+	public static void main(String args[]) {
+		
+		int quantidade = new int[1];
+		int count, numero;
+		Scanner ler = new Scanner(System.in);
+		
+		for(count = 0; count<10; count++) {
+		}
+	}
+}

@@ -1,0 +1,7 @@
+package Lista03Exercicios;
+
+public class Exe03 {
+	public static void main(String args[]) {
+		System.out.print("olá");
+	}
+}

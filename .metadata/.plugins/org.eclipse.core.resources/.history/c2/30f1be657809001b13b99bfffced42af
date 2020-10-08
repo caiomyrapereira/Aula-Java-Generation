@@ -1,0 +1,29 @@
+package Lista03Exercicios;
+
+import java.util.Scanner;
+
+public class Exe06 {
+	public static void main(String args[]) {
+		System.out.print("olá");
+		/*
+		   6. Escrever um programa que receba vários números inteiros no teclado. E no
+           final imprimir a média dos números múltiplos de 3. Para sair digitar
+           0(zero).(DO...WHILE)
+		*/
+		
+		int[] arr = new int[2];
+		int numero = 1;
+		Scanner ler = new Scanner(System.in);
+		
+		do {
+			System.out.printf("Digite um número qualquer:");
+			numero = ler.nextInt();
+			
+			
+		}while(numero !=0 );
+		
+		
+		
+	}
+
+}

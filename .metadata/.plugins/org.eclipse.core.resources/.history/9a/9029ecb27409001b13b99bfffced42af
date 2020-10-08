@@ -1,0 +1,32 @@
+package Lista03Exercicios;
+
+import java.util.Scanner;
+
+public class Exe03 {
+	public static void main(String args[]) {
+        
+		int 
+		idade = 0, 
+		adolecente = 0,
+		idoso = 0;
+		Scanner ler = new Scanner(System.in);
+		
+		while(idade <99) {
+			System.out.printf("Digite sua idade :");
+		    idade = ler.nextInt();
+		    
+		    if( idade<21) {
+		    	adolecente++;
+		    }
+		    else if(idade>50) {
+		    	idoso++;
+		    }
+		}
+		
+		System.out.printf("Total de pessoas com menos de '21 anos' é %d", adolecente);
+		System.out.printf("Total de pessoas com menos de '21 anos' é %d", idoso);
+		
+		
+		
+	}
+}
