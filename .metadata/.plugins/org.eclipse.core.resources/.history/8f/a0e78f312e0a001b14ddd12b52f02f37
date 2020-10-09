@@ -1,0 +1,19 @@
+package Lista04Exercicios;
+
+import java.util.Scanner;
+
+public class Exe02 {
+	public static void main(String args[]) {
+		
+		int[] numeros = new int[6];
+		int[] arr = new int[2];
+		int numero;
+		Scanner ler = new Scanner(System.in);
+		
+		for( int count = 0; count<6; count++) {
+			System.out.print("Digite um número qualquer: ");
+			numero = ler.nextInt();
+			arr[(numero%2)]++;
+		}
+	}
+}

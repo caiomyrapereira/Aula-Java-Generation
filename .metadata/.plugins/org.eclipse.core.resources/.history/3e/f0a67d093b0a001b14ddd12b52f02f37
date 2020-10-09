@@ -1,0 +1,14 @@
+package Lista04Exercicios;
+
+import java.util.Scanner;
+
+public class Exe03 {
+	public class static void main (String args[]) {
+		/*
+		 Leia uma matriz 3 x 3, conte e escreva quantos valores maiores que 10 ela possui.
+		*/
+		
+		
+		Scanner ler = new Scanner(System.in);
+	}
+}
