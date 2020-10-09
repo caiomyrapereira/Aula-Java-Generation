@@ -1,0 +1,30 @@
+package Desafios;
+
+
+public class MenorEMaior {
+	
+	static int rand(int i, int j) {
+		
+		return (int) Math.ceil(Math.random() * (i  - j + 1)) - 1 + j;
+	}
+	
+	public static void main(String args[]) {
+		
+		double n = Math.pow(10, 8);
+		int value = (int)n;
+		System.out.println(value);
+		System.out.println(rand(-value, value));
+		
+		int[] arr = new int[10];
+		int count;
+		
+		for(count=0;count<10;count++) {
+			arr[count] = rand(-value, value);
+		}
+		
+		for(count=2;count<=8;count++) {
+			System.out.println(arr[count]);
+		}
+		
+	}
+}

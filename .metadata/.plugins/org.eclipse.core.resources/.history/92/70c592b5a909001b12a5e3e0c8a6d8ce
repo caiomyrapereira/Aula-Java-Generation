@@ -1,0 +1,19 @@
+package Desafios;
+
+
+public class MenorEMaior {
+	
+	static int rand(int i, int j) {
+		
+		return (int) Math.ceil(Math.random() * (i  - j + 1)) - 1 + j;
+	}
+	
+	public static void main(String args[]) {
+		
+		double n = Math.pow(10, 8);
+		int value = (int)n;
+		System.out.println(value);
+		//System.out.println(rand(-n, n));
+		
+	}
+}
