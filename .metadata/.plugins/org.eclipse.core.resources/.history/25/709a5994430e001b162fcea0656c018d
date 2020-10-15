@@ -1,0 +1,34 @@
+package PooExe01;
+
+public class Cliente {
+	private String nome;
+	private int cpf;
+	private int idade;
+	private double divida;
+	
+	public Cliente(String nome, int idade, String enderenco, int cpf, double dinheiro) {
+		this.nome = nome;
+		this.idade = idade;
+		this.cpf = cpf;
+		this.divida = -dinheiro;
+	}
+	
+	public  String getNome(  ) {
+	    return this.nome;
+	}
+	
+	public void Renomear(String newNome) {
+		this.nome = newNome;
+	}
+	
+	public void addIdade() {
+		this.idade++;
+	}
+	
+	public int getIdade() {
+		return idade;
+	}
+	
+	
+	
+}

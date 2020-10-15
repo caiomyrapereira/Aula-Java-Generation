@@ -1,0 +1,28 @@
+package PooLIsta01Exercicios;
+
+public class ContaBancaria {
+	int id;
+	String senha;
+	double saldo;
+	
+	public ContaBancaria(int id, String senha, double dinheiro) {
+		this.id  = id;
+		this.senha = senha;
+		this.saldo = dinheiro;
+	}
+	
+	public void consultaSaldo(String senha) {
+		if(this.senha == senha) 
+			System.out.println("O seu saldo: "+ this.saldo + "Reais");
+		else
+			System.out.println("Senha inválida.");
+	}
+	
+	public void Deposito(.double dinheiro ) {
+		if(this.senha == senha)
+			this.saldo+= dinheiro;
+		else
+			System.out.println("Senha inválida.");
+	}
+    
+}

@@ -1,0 +1,51 @@
+package PooExe01;
+
+public class Cliente {
+	private String nome;
+	private int cpf;
+	private int idade;
+	private double divida;
+	
+	public Cliente(String nome, int idade, String enderenco, int cpf, double dinheiro) {
+		this.nome = nome;
+		this.idade = idade;
+		this.cpf = cpf;
+		this.divida = -dinheiro;
+	}
+	
+	public  String getNome(  ) {
+	    return this.nome;
+	}
+	
+	public void Renomear(String newNome) {
+		this.nome = newNome;
+	}
+	
+	public void addIdade() {
+		this.idade++;
+	}
+	
+	public int getIdade() {
+		return idade;
+	}
+	
+	public void pagaDivida(int cpf) {
+		if(this.cpf == cpf) {
+			System.out.println(this.nome+", você pagou sua divida.");
+			this.divida = 0;
+		}
+		else {
+			System.out.println("Cpf inválido, você não tem permissão.");
+		}
+	}
+	
+	public void consultaDivida(int cpf) {
+		if(this.cpf == cpf) 
+			System.out.println(this.nome+", A sua dívida é "+this.divida);
+		else 
+			System.out.println("Cpf inválido, você não tem permissão.");
+	
+	}
+	
+	
+}

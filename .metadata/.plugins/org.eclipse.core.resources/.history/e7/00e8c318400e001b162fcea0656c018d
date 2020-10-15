@@ -1,0 +1,18 @@
+package PooExe01;
+
+public class Cliente {
+	private String nome;
+	private String enderenco;
+	private int cpf;
+	private int idade;
+	private double dinheiro;
+	
+	public Cliente(String nome, int idade, String enderenco, int cpf, double dinheiro) {
+		nome = nome;
+		idade = idade;
+		enderenco = enderenco;
+		cpf = cpf;
+		dinheiro = dinheiro;
+	}
+	
+}

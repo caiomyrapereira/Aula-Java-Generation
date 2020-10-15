@@ -1,0 +1,18 @@
+package PooExe01;
+
+public class Cliente {
+	private String nome;
+	private String enderenco;
+	private int cpf;
+	private int idade;
+	private double dinheiro;
+	
+	public Cliente(String nome, int idade, String enderenco, int cpf, double dinheiro) {
+		this.nome = nome;
+		this.idade = idade;
+		this.enderenco = enderenco;
+		this.cpf = cpf;
+		this.dinheiro = dinheiro;
+	}
+	
+}

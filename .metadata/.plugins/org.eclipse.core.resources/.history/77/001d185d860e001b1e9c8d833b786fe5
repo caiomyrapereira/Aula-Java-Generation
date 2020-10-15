@@ -1,0 +1,29 @@
+package PooLIsta01Exercicios;
+
+public class MainContaBancaria {
+	public static void main(String args[]) {
+		ContaBancaria conta = new ContaBancaria(123, "abc123", 2000);
+		
+		
+		// Método consultaSaldo
+		conta.consultaSaldo("--------consultado-saldo--------");
+		conta.consultaSaldo("asa");
+		conta.consultaSaldo("abc123");
+		conta.consultaSaldo("--------------------------------");
+		
+		//  Método deposito 
+		conta.deposito("asa", 2000);
+		conta.consultaSaldo("abc123");
+		conta.deposito("abc123", 2000);
+		conta.consultaSaldo("abc123");
+	
+		
+		// Método saque
+		conta.saque("asa", 4000);
+		conta.consultaSaldo("abc123");
+		conta.saque("abc123",4000);
+		conta.consultaSaldo("abc123");
+		conta.saque("abc123",1);
+		
+	}
+}

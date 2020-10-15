@@ -1,0 +1,11 @@
+package PooExe01;
+
+public class Main {
+	public static void main(String args[]) {
+		Cliente newCliente = new Cliente("Leticia", 20, "rua banada", 212121212, 2000.00 );
+		
+		System.out.println(newCliente.getNome());
+		newCliente.Renomear("maria");
+		System.out.println(newCliente.getNome());
+	}
+}
