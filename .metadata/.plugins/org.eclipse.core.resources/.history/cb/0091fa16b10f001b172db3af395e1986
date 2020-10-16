@@ -1,0 +1,9 @@
+package PooLista03Exercicios;
+
+public class Cachorro extends Animal {
+	
+	public Cachorro() {
+		
+	}
+	
+}

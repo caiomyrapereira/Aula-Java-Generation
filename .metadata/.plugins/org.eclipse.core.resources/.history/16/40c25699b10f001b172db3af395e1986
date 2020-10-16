@@ -1,0 +1,13 @@
+package PooLista03Exercicios;
+
+public class TestCachorro {
+	public static void main(String args[]) {
+		
+		System.out.println("------Cachorro------");
+		
+		Cachorro dog  = new Cachorro("mike",10);
+		System.out.println(dog.imitirSom());
+		
+		
+	}
+}

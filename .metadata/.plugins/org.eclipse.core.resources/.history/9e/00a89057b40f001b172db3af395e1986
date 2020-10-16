@@ -1,0 +1,17 @@
+package PooLista03Exercicios;
+
+public class AllTest {
+	public static void main(String args[]) {
+		
+		System.out.println("------Cachorro------");
+		Cachorro dog  = new Cachorro("mike",10);
+		System.out.println("Imitido som: "+dog.imitirSom());
+		System.out.println("Ação: "+dog.faz());
+		
+		System.out.println("------Cachorro------");
+		Cavalo cav  = new Cavalo("ouro",12);
+		System.out.println("Imitido som: "+cav.imitirSom());
+		System.out.println("Ação: "+cav.faz());
+		
+	}
+}
