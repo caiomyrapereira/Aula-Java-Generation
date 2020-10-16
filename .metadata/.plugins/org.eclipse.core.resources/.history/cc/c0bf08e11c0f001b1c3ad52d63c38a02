@@ -1,0 +1,12 @@
+package PooLista02Exercicios;
+
+public class TestFuncionario {
+	public static void main(String args[]) {
+		
+		Funcionario f1 = new Funcionario("joão", "Rua benini", "112121213",2000, 500);
+		f1.imprimirInfo();
+		
+		System.out.println(f1.obterSaldo());
+	}
+
+}

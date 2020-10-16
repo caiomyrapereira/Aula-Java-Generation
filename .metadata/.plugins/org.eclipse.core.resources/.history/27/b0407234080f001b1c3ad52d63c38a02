@@ -1,0 +1,14 @@
+package PooLista02Exercicios;
+
+public class TestEmpregado {
+	public static void main(String args[]) {
+		
+		Empregado f1 = new Empregado("Diego"," Rua banana", "212131313",123);
+		
+		f1.imprimirInfo();
+		f1.setSalarioBase(2000);
+		f1.setImposto(0.2);
+		
+		System.out.println(f1.calcularSalario());
+	}
+}

@@ -1,0 +1,14 @@
+package PooLista02Exercicios;
+
+public class TestVendedor {
+	public static void main(String args[]) {
+		
+		Vendedor v1 = new Vendedor("Gabi","Rua bebi","(11)921213131",22,"3213232323", 2000, 35);
+		
+		v1.imprimirInfo();
+		System.out.println("\n");
+		v1.validarCpf();
+		v1.setCpf("30191910282");
+		v1.validarCpf();
+	}
+}

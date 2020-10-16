@@ -1,0 +1,9 @@
+package PooLista02Exercicios;
+
+public class TestPessoa {
+	public static void main(String args[]) {
+		
+		Pssoa p1 = new Pessoa("joão", "Rua benini", "112121213");
+		
+	}
+}

@@ -1,0 +1,11 @@
+package PooLista02Exercicios;
+
+public class TestEmpregado {
+	public static void main(String args[]) {
+		
+		Empregado f1 = new Empregado("Diego"," Rua banana", "212131313",123);
+		
+		f1.imprimirInfo();
+		
+	}
+}

@@ -1,0 +1,42 @@
+/*
+  6. Implemente a classe Vendedor como subclasse da classe Pessoa. Um determinado vendedor
+  tem como atributos da classe Pessoa e também os atributos próprios como valorVendas
+  (correspondente ao valor monetário dos artigos vendidos) e o atributo comissao (porcentagem
+  do valorVendas que será adicionado ao vencimento base do Vendedor).
+*/
+
+package PooLista02Exercicios;
+
+public class Vendedor extends Pessoa {
+	
+	private double valorVendas; 
+	private double comissao;
+	
+	public Vendedor(String nome, String endereco, String telefone, int idade, String cpf, double valorVendas, double comissao){
+		super(nome, endereco, telefone, idade, cpf);	
+		
+		this.setValorVendas(valorVendas);
+		this.setComissao(comissao);
+	}
+	
+	public double getValorVendas() {
+		return valorVendas;
+	}
+	
+	public void setValorVendas(double valorVendas) {
+		this.valorVendas = valorVendas;
+	}
+	
+	public double getComissao() {
+		return comissao;
+	}
+	
+	public void setComissao(double comissao) {
+		this.comissao = comissao;
+	}
+	
+	public void calcularSalario() {
+		double salario = this.getValorVendas() - (this.getComissao()-100)/100;
+		System.out.println("O total do sálario do "+this.getNome()+" é "+salario+"Reais");
+	}
+}

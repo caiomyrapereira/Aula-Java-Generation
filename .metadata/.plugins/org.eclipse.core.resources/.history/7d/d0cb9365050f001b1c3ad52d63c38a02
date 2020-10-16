@@ -1,0 +1,9 @@
+package PooLista02Exercicios;
+
+public class Empregado extends Pessoa{
+	
+	public Empregado(String nome, String endereco, String telefone) {
+		super(nome, endereco, telefone);
+	}
+	
+}

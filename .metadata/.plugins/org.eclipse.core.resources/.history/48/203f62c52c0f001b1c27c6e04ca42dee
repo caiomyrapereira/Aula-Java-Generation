@@ -1,0 +1,48 @@
+package PooLista02Exercicios;
+
+public class Empregado extends Pessoa{
+	private int codigoSetor;
+	private double salarioBase;
+	private double imposto;
+	
+
+	public Empregado(String nome, String endereco, String telefone, int idade, String cpf,int codigoSetor) {
+		super(nome, endereco, telefone, idade, cpf);
+		this.setCodigoSetor(codigoSetor);
+	}
+	
+	private int getCodigoSetor() {
+		return codigoSetor;
+	}
+
+
+	private void setCodigoSetor(int codigoSetor) {
+		this.codigoSetor = codigoSetor;
+	}
+
+
+	public double getSalarioBase() {
+		return salarioBase;
+	}
+
+
+	public void setSalarioBase(double salarioBase) {
+		this.salarioBase = salarioBase;
+	}
+
+
+	public double getImposto() {
+		return imposto;
+	}
+
+
+	public void setImposto(double imposto) {
+		this.imposto = imposto;
+	}
+	
+	public double calcularSalario() {
+		double  salario = this.getSalarioBase() * ( 100 - this.getImposto() )/100;
+		return salario;
+	}
+	
+}

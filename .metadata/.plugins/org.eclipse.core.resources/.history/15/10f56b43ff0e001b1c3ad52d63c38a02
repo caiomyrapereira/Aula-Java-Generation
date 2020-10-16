@@ -1,0 +1,36 @@
+package PooLista02Exercicios;
+
+public class Funcionario extends Pessoa {
+    
+	private double valorCredito;
+	private double valorDivida;
+	
+	
+	public Funcionario(String nome, String endereco, String telefone){
+		
+		super(nome, endereco,  telefone);
+		
+	}
+
+
+	private double getValorCredito() {
+		return valorCredito;
+	}
+
+
+	private void setValorCredito(double valorCredito) {
+		this.valorCredito = valorCredito;
+	}
+
+
+	private double getValorDivida() {
+		return valorDivida;
+	}
+
+
+	private void setValorDivida(double valorDivida) {
+		this.valorDivida = valorDivida;
+	}
+	
+	
+}

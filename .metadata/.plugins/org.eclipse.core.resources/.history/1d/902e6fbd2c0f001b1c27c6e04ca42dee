@@ -1,0 +1,18 @@
+/*
+
+4. Implemente a classe Administrador como subclasse da classe pessoa. Um determinado
+   administrador tem como atributos da classe Pessoa e também os atributos próprios como
+   ajudaDeCusto (ajudas referentes a viagens, estadias).
+  
+*/
+
+package PooLista02Exercicios;
+
+public class Administrador extends Pessoa {
+	public double ajudaDeCusto;
+	
+	public Administrador(String nome, String endereco, String telefone, int idade, String cpf){
+		super(nome, endereco, telefone, idade, cpf);
+	}
+	
+}

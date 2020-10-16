@@ -1,0 +1,11 @@
+package PooLista02Exercicios;
+
+public class TestAdministrador {
+	public static void main(String args[]) {
+		
+		
+		Administrador adm = Administrador("João","Rua bebi","(11)921213131",22,"3213232323",2000,00);
+		
+		System.out.println("q~qçwqwq");
+	}
+}

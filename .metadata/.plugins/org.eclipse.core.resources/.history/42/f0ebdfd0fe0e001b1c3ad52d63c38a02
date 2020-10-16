@@ -1,0 +1,10 @@
+package PooLista02Exercicios;
+
+public class Funcionario extends Pessoa {
+    
+	do
+	
+	public Funcionario(){
+		super();
+	}
+}

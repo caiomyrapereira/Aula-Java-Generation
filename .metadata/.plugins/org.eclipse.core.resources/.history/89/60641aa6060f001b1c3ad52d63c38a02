@@ -1,0 +1,8 @@
+package PooLista02Exercicios;
+
+public class TestEmpregado {
+	public static void main(String args[]) {
+		
+		System.out.println("dsdsdsdsd");
+	}
+}

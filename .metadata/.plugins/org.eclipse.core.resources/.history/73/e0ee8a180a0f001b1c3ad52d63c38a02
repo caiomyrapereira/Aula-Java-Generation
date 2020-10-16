@@ -1,0 +1,15 @@
+package PooLista02Exercicios;
+
+public class TestPessoa {
+	public static void main(String args[]) {
+		
+		Pessoa p1 = new Pessoa("joão", "Rua benini", "112121213");
+		p1.imprimirInfo();
+		
+		p1.setNome("Gabriel");
+		p1.setEndereco("Rua brigadeiro");
+		p1.setTelefone("(11) 2221-1212");
+		
+		
+	}
+}
