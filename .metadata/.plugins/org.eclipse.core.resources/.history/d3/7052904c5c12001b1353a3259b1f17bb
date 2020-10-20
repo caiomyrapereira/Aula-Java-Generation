@@ -1,0 +1,12 @@
+package PooLista04Exercicios;
+
+import java.util.Collection;
+
+public class List {
+	public static void main(String args[]) {
+		
+		Collection<String> nomes = new Arrays.asList("banana","maça");
+		
+		
+	}
+}
