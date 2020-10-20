@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class List {
 	public static void main(String args[]) {
-		
+
 		int opcao;
 		ArrayList<String> estoque = new ArrayList<String>();
 		Collection<String> frutas = Arrays.asList("banana", "maça", "limão", "tomate");
@@ -15,8 +15,7 @@ public class List {
 		Scanner ler = new Scanner(System.in);
 		estoque.addAll(frutas);
 
-
-		do{
+		do {
 			System.out.print("\n (4) Para apresentar todos os produtos da lista do estoque.");
 			System.out.print("\n (3) Para atualizar um produto do estoque.");
 			System.out.print("\n (2) Para remover um produto do estoque.");
@@ -24,7 +23,7 @@ public class List {
 			System.out.print("\n (0) Para sair.");
 			System.out.print("\nEscolher uma opção:");
 			opcao = ler.nextInt();
-			switch(opcao) {
+			switch (opcao) {
 			case 1:
 				System.out.print("\n--------------------------------------------------------");
 				System.out.print("\nDigite um produto para armazenar no estoque:");
@@ -45,7 +44,7 @@ public class List {
 				String antigoProduto = ler.next();
 				System.out.println("\nDigite o novo nome do produto:");
 				String novoProduto = ler.next();
-				estoque.set( estoque.indexOf(antigoProduto) , novoProduto);
+				estoque.set(estoque.indexOf(antigoProduto), novoProduto);
 				System.out.print("\n--------------------------------------------------------");
 				break;
 			case 4:
@@ -54,7 +53,7 @@ public class List {
 				System.out.print("\n--------------------------------------------------------");
 				break;
 			}
-						
-		}while(opcao != 0);
+
+		} while (opcao != 0);
 	}
 }

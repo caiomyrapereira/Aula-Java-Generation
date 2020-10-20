@@ -2,24 +2,24 @@ package PooLIsta01Exercicios;
 
 public class MainCliente {
 	public static void main(String args[]) {
-		Cliente newCliente = new Cliente("Leticia", 20, "rua banada", 212121212 );
-		
-		// Método  de GetNome.
+		Cliente newCliente = new Cliente("Leticia", 20, "rua banada", 212121212);
+
+		// Método de GetNome.
 		System.out.println(newCliente.getNome());
-		
+
 		// Método de Renomear.
 		newCliente.Renomear("Eduarda");
 		System.out.println(newCliente.getNome());
-		
-		//  Métodos addIdade e getIdade.
+
+		// Métodos addIdade e getIdade.
 		System.out.println(newCliente.getIdade());
 		newCliente.addIdade();
 		System.out.println(newCliente.getIdade());
-		
-		//  Métodos getInderenco e mudaDeEndereco.
+
+		// Métodos getInderenco e mudaDeEndereco.
 		System.out.println(newCliente.getInderenco());
 		newCliente.mudarEndereco("Rua benini");
 		System.out.println(newCliente.getInderenco());
-	
+
 	}
 }

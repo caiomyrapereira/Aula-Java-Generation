@@ -3,29 +3,28 @@ package PooLIsta01Exercicios;
 public class MainContaBancaria {
 	public static void main(String args[]) {
 		ContaBancaria conta = new ContaBancaria(123, "abc123", 2000);
-		
-		
+
 		// Método consultaSaldo
 		System.out.println("-------Consulta saldo ------");
 		conta.consultaSaldo("asa");
 		conta.consultaSaldo("abc123");
 		System.out.println("----------------------------");
-		
-		//  Método depósito 
+
+		// Método depósito
 		System.out.println("---------Depósito-----------");
 		conta.deposito("asa", 2000);
 		conta.consultaSaldo("abc123");
 		conta.deposito("abc123", 2000);
 		conta.consultaSaldo("abc123");
 		System.out.println("----------------------------");
-		
+
 		// Método saque
 		System.out.println("-----------Saque------------");
 		conta.saque("asa", 4000);
 		conta.consultaSaldo("abc123");
-		conta.saque("abc123",4000);
+		conta.saque("abc123", 4000);
 		conta.consultaSaldo("abc123");
-		conta.saque("abc123",1);
+		conta.saque("abc123", 1);
 		System.out.println("----------------------------");
 	}
 }

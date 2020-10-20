@@ -1,23 +1,23 @@
 package PooLista03Exercicios;
 
 public class Animal {
-	
+
 	private String nome;
 	private int idade;
-	
+
 	public Animal(String nome, int idade) {
 		this.setNome(nome);
 		this.setIdade(idade);
 	}
-	
+
 	public String imitirSom(String som) {
 		return som;
 	}
-	
+
 	public String faz(String acao) {
 		return acao;
 	}
-	
+
 	public String getNome() {
 		return nome;
 	}
@@ -33,7 +33,7 @@ public class Animal {
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
-	
+
 	public void addIdade() {
 		this.setIdade(this.idade++);
 	}
