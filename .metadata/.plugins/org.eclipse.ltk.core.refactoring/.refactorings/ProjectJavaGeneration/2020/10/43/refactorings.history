@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;PooLista04Exercicios&apos; to &apos;CollectionLista01Exercicios&apos;&#x0D;&#x0A;- Original project: &apos;ProjectJavaGeneration&apos;&#x0D;&#x0A;- Original element: &apos;ProjectJavaGeneration/src/PooLista04Exercicios&apos;&#x0D;&#x0A;- Renamed element: &apos;ProjectJavaGeneration/src/CollectionLista01Exercicios&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;PooLista04Exercicios&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;PooLista04Exercicios" name="CollectionLista01Exercicios" qualified="false" references="true" stamp="1603247625978" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,78 @@
+package PooLista04Exercicios;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Scanner;
+
+public class List {
+	public static boolean checkLetters(String str) {
+		return str.matches("[a-zA-Z]+");
+	}
+
+	public static void main(String args[]) {
+
+		int opcao;
+		ArrayList<String> estoque = new ArrayList<String>();
+		Collection<String> frutas = Arrays.asList("banana", "maça", "limão", "tomate");
+		String produto = "", novoProduto = "";
+		boolean value;
+		Scanner ler = new Scanner(System.in);
+		estoque.addAll(frutas);
+
+		do {
+			do {
+				System.out.print("\n-----------------------------------------------------------");
+				System.out.print("\n (4) Para apresentar todos os produtos da lista do estoque.");
+				System.out.print("\n (3) Para atualizar um produto do estoque.");
+				System.out.print("\n (2) Para remover um produto do estoque.");
+				System.out.print("\n (1) Para armazenar um produto no estoque.");
+				System.out.print("\n (0) Para sair.");
+				System.out.print("\nEscolher uma opção:");
+				opcao = ler.nextInt();
+				System.out.print("\n-----------------------------------------------------------");
+			} while ( !((opcao >= 0) && (opcao <= 4)) );
+			switch (opcao) {
+			case 1:
+				produto = "test";
+				do {
+					System.out.print("\n--------------------------------------------------------");
+					if (!checkLetters(produto))
+						System.out.print("\nAtenção!! \nnão poderá armazenar números.\n");
+					
+					System.out.print("\nDigite um produto para armazenar no estoque:");
+					produto = ler.next();
+					System.out.print("\n--------------------------------------------------------");
+				} while( !checkLetters(produto) );
+
+				estoque.add(produto);
+				break;
+			case 2:
+				System.out.print("\n--------------------------------------------------------");
+				System.out.print("\nDigite um produto para armazenar no estoque:");
+				produto = ler.next();
+				estoque.remove(produto);
+				System.out.print("\n--------------------------------------------------------");
+				break;
+			case 3:
+				System.out.print("\n--------------------------------------------------------");
+				System.out.println("\nDigite o nome do produto para atualizar:");
+				produto = ler.next();
+				System.out.println("\nDigite o novo nome do produto:");
+				novoProduto = ler.next();
+
+				System.out.println(estoque);
+
+				estoque.set(estoque.indexOf(produto), novoProduto);
+				System.out.print("\n--------------------------------------------------------");
+				break;
+			case 4:
+				System.out.print("\n--------------------------------------------------------\n\n");
+				System.out.println(estoque);
+				System.out.print("\n--------------------------------------------------------");
+				break;
+			}
+
+		} while (opcao != 0);
+	}
+}
